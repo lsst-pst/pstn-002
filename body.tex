@@ -21,7 +21,7 @@ However  this goes deeper. Looking at the OCS code this also assumes a GUI, ever
 There seems no way to call this from a script or command line. It seems naive to think we may be able to encapsulate this in a compiled routine\footnote{In Java} anytime before operations.
 
 
-The LSST users, especially in commissioning, are highly efficient in abstract thinking, scripting and coding of one form or another. There has, perhaps,  been  a major misunderstanding of what users want from the control system. The TSS approach seems to be to provide canned high level procedures (right of \figref{fig:gspec}, the users want and need a much more open and flexible system.
+The LSST users, especially in commissioning, are highly efficient in abstract thinking, scripting and coding of one form or another. There has, perhaps,  been  a major misunderstanding of what users want from the control system. The TSS approach seems to be to provide canned high level procedures (right of \figref{fig:gspec}), the users want and need a much more open and flexible system.
 The flexibility is totally necessary in commissioning.
 The canned approach is appropriate in later operations, but we have  a lot of AIT and commissioning to go through first.
 Right now we do not know the list of procedures, even if we had the list we could not detail how to do them without going through commissioning - the first need is a scriptable system for commanding the observatory (left of \figref{fig:gspec}.
@@ -35,20 +35,20 @@ We will begin to learn this in commissioning. There has been a major conflict wi
 
 The FSM is the {\em correct} approach  but it can not be applied system wide. We all fall in the trap of generalization.
 In this case trying to apply the FSM approach to the entire system will never work and has locked the TSS team up in an impossible task -
-the team has been waiting for the requirements (which define states) ) while most of us understand we will not know those states until we are on the mountain with the actual hardware.
+the team has been waiting for the requirements (which define states) ) while many of us understand we will not know those states until we are on the mountain with the actual hardware.
 
-The FSM approach is inherently restrictive  it allows one to do exactly what is prescribed. A new observatory like LSST, especially in commissioning, needs a much more flexible and open approach. A very restrictive system with only {\em allowed} transitions often leads to ta situation where {\em the system} will not allow an activity even if the users/engineers/observatory scientist agree it is the correct actions. Again this is probably ok in operations but not in commissioning.
+The FSM approach is inherently restrictive  it allows one to do exactly what is prescribed. A new observatory like LSST, especially in commissioning, needs a much more flexible and open approach. A very restrictive system with only {\em allowed} transitions often leads to ta situation where {\em the system} will not allow an activity even if the users/engineers/observatory scientist agree it is the correct action. Again this is probably ok in operations but not in commissioning.
 
 For Example, at some point we will need to manipulate the louvers to control air flow.
  How we do that will depend on wind and temperatures - we do not know today how that will be done.
 There will probably be some formula taking account of temperature inside the dome and airflow outside the dome.
-Initially  we \footnote{The royal we here is really the commissioning team and operators.} will possibly adjust the louvers until we understand how the work over many nights, we may experiment with a number of formula looking at EFD and sending SAL commands.
- This requires an very flexible system,  not an FSM though of course once could make a more flexible FSM..
+Initially  we \footnote{The royal we here is really the commissioning team and operators.} will possibly adjust the louvers until we understand how they work over many nights, we may experiment with a number of formula looking at EFD and sending SAL commands.
+ This requires a very flexible system,  not an FSM though of course once could make a more flexible FSM.
 
 \section{Conclusion}
 In TSS we need to focus on a flexible programmable interface to meet the  primary needs of AIT and Commissioning.
-Meanwhile we have an INRIA contract to build a graphical interface for Operations (and possible some of commissioning).
-This of this very much in the terms of hackableuser interface \citep{2015ASPC..495..101B}.
+Meanwhile we have an INRIA contract to build a graphical interface for Operations (and possibly some of commissioning).
+This of this very much in the terms of hackable user interface \citep{2015ASPC..495..101B}.
 We also do need to be aware of the safety of operating the system - as we build up scripts for testing, AIT and Commissioning we will start to build more constraints into the system - we should not try to build all constraints in from the start.
 
 

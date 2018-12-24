@@ -23,3 +23,6 @@ TSS:Telescope and Site Software
 SAL:Service Access Layer
 PSTN:Project Science Technical Note
 FSM:Finite State Machine
+INRIA: French research institute for digital sciences
+TCS: Telescope Control System
+ATCS:Auxiliary  Telescope Control System

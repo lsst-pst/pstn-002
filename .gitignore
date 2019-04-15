@@ -1,3 +1,6 @@
+# Build product
+PSTN-002.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
